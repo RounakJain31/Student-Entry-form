@@ -24,7 +24,7 @@ export default function StudentEntryForm() {
       return;
     }
 
-    setStudents((prev) => [...prev, { ...form, age: String(ageNum) }]);
+    setStudents((prev) => [...prev, { ...form }]);
     setForm({ name: "", age: "", grade: "" });
     setError("");
   }
@@ -69,7 +69,7 @@ export default function StudentEntryForm() {
               onChange={handleChange}
               className="w-full rounded-lg border px-3 py-2"
             >
-              <option value="">Select Grade</option>
+              <option value="">Select grade</option>
               <option value="5">5</option>
               <option value="6">6</option>
               <option value="7">7</option>
@@ -82,10 +82,7 @@ export default function StudentEntryForm() {
           <div className="col-span-3">
             {error && <div className="text-sm text-red-600 mb-2">{error}</div>}
 
-            <button
-              type="submit"
-              className="bg-indigo-600 text-white px-4 py-2 rounded-lg mr-2"
-            >
+            <button type="submit" className="bg-indigo-600 text-white px-4 py-2 rounded-lg mr-2">
               Add Student
             </button>
 
@@ -114,7 +111,7 @@ export default function StudentEntryForm() {
                   <div>
                     <div className="font-medium">{s.name}</div>
                     <div className="text-sm text-gray-500">
-                      Age: {s.age} • Grade: {s.grade}
+                      Class {s.grade}
                     </div>
                   </div>
 
