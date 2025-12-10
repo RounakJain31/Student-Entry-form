@@ -111,7 +111,7 @@ export default function StudentEntryForm() {
                   <div>
                     <div className="font-medium">{s.name}</div>
                     <div className="text-sm text-gray-500">
-                      Class {s.grade}
+                      Age: {s.age} • Class {s.grade}
                     </div>
                   </div>
 
