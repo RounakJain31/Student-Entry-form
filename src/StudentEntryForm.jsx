@@ -51,7 +51,7 @@ export default function StudentEntryForm() {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="e.g. Aisha Patel"
+              placeholder="e.g. MS Dhoni"
               className="w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-300"
             />
           </div>
@@ -62,7 +62,7 @@ export default function StudentEntryForm() {
               name="age"
               value={form.age}
               onChange={handleChange}
-              placeholder="e.g. 12"
+              placeholder="e.g. 14"
               className="w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-300"
             />
           </div>
@@ -73,7 +73,7 @@ export default function StudentEntryForm() {
               name="grade"
               value={form.grade}
               onChange={handleChange}
-              placeholder="e.g. 7"
+              placeholder="Select Grade"
               className="w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-300"
             />
           </div>
