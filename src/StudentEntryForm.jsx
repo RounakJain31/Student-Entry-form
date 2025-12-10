@@ -70,9 +70,12 @@ export default function StudentEntryForm() {
               className="w-full rounded-lg border px-3 py-2"
             >
               <option value="">Select Grade</option>
-              <option value="A">A</option>
-              <option value="B">B</option>
-              <option value="C">C</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
             </select>
           </div>
 
@@ -88,7 +91,10 @@ export default function StudentEntryForm() {
 
             <button
               type="button"
-              onClick={() => setForm({ name: "", age: "", grade: "" })}
+              onClick={() => {
+                setForm({ name: "", age: "", grade: "" });
+                setError("");
+              }}
               className="border px-4 py-2 rounded-lg"
             >
               Clear
